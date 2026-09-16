@@ -1,0 +1,26 @@
+{
+  "name": "mipanelpro",
+  "version": "1.0.0",
+  "description": "Panel de control con extracción e inyección de repositorios GitHub",
+  "main": "extraer-e-inyectar.js",
+  "scripts": {
+    "start": "node extraer-e-inyectar.js",
+    "sync": "node extraer-e-inyectar.js",
+    "setup-db": "mysql -u root -p < crear_tabla_archivos.sql",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "github",
+    "mysql",
+    "sync",
+    "extraction"
+  ],
+  "author": "juanlucifer",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "mysql2": "^3.6.0",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {}
+}
